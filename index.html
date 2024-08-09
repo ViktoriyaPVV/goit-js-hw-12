@@ -5,22 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    
     <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-b3d1a2ef.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-BjmtRwYh.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-uZizratE.css">
   </head>
   <body>
-    
-
     <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/goit-js-hw-12/assets/javascript-8dac5379.svg" alt="" />
+      <div class="container-gallery">
+        <form class="form search-form">
+          <div class="form-group">
+            <input type="text" class="form-input" name="query" />
+          </div>
+
+          <button type="submit" class="btn">Search</button>
+        </form>
+        <ul class="gallery-list"></ul>
+        <span class="hidden loader"></span>
+        <div class="btn-primary-container">
+          <button type="button" class="btn-primary" data-action="load-more">
+            <span class="label-btn-primary">Load more</span>
+          </button>
+        </div>
+      </div>
     </section>
-
-    <!-- Loads the specified .html file -->
-    
-
-    
   </body>
 </html>
